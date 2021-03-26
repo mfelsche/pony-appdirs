@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/logo.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-ponylang-0.2.7">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-ponylang-0.2.8">
     
     
       
@@ -478,14 +478,14 @@
                 
                 
                 <h1 id="knownfolders">KnownFolders<a class="headerlink" href="#knownfolders" title="Permanent link">&para;</a></h1>
-<p><span class="source-link"><a href="../src/appdirs/known_folders/#L57">[Source]</a></span></p>
+<p><span class="source-link"><a href="../src/appdirs/known_folders/#L64">[Source]</a></span></p>
 <p>Utility for getting some known folders on windows.</p>
 <p>https://docs.microsoft.com/en-ca/windows/desktop/shell/known-folders</p>
 <pre><code class="language-pony">primitive val KnownFolders
 </code></pre>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">&para;</a></h2>
 <h3 id="create">create<a class="headerlink" href="#create" title="Permanent link">&para;</a></h3>
-<p><span class="source-link"><a href="../src/appdirs/known_folders/#L57">[Source]</a></span></p>
+<p><span class="source-link"><a href="../src/appdirs/known_folders/#L64">[Source]</a></span></p>
 <pre><code class="language-pony">new val create()
 : KnownFolders val^
 </code></pre>
@@ -496,7 +496,7 @@
 <hr />
 <h2 id="public-functions">Public Functions<a class="headerlink" href="#public-functions" title="Permanent link">&para;</a></h2>
 <h3 id="apply">apply<a class="headerlink" href="#apply" title="Permanent link">&para;</a></h3>
-<p><span class="source-link"><a href="../src/appdirs/known_folders/#L63">[Source]</a></span></p>
+<p><span class="source-link"><a href="../src/appdirs/known_folders/#L70">[Source]</a></span></p>
 <pre><code class="language-pony">fun box apply(
   folderid: Array[U8 val] val)
 : String iso^ ?
@@ -511,7 +511,7 @@
 </ul>
 <hr />
 <h3 id="eq">eq<a class="headerlink" href="#eq" title="Permanent link">&para;</a></h3>
-<p><span class="source-link"><a href="../src/appdirs/known_folders/#L63">[Source]</a></span></p>
+<p><span class="source-link"><a href="../src/appdirs/known_folders/#L70">[Source]</a></span></p>
 <pre><code class="language-pony">fun box eq(
   that: KnownFolders val)
 : Bool val
@@ -526,7 +526,7 @@
 </ul>
 <hr />
 <h3 id="ne">ne<a class="headerlink" href="#ne" title="Permanent link">&para;</a></h3>
-<p><span class="source-link"><a href="../src/appdirs/known_folders/#L63">[Source]</a></span></p>
+<p><span class="source-link"><a href="../src/appdirs/known_folders/#L70">[Source]</a></span></p>
 <pre><code class="language-pony">fun box ne(
   that: KnownFolders val)
 : Bool val

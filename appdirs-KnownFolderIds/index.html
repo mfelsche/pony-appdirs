@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/logo.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-ponylang-0.2.7">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-ponylang-0.2.8">
     
     
       
@@ -532,7 +532,7 @@
                 
                 
                 <h1 id="knownfolderids">KnownFolderIds<a class="headerlink" href="#knownfolderids" title="Permanent link">&para;</a></h1>
-<p><span class="source-link"><a href="../src/appdirs/known_folders/#L5">[Source]</a></span></p>
+<p><span class="source-link"><a href="../src/appdirs/known_folders/#L12">[Source]</a></span></p>
 <p>Known folder ids as described in:
 https://docs.microsoft.com/en-ca/windows/desktop/shell/knownfolderid
 functions return the little endian byte values of the folderid GUIDs</p>
@@ -540,7 +540,7 @@ functions return the little endian byte values of the folderid GUIDs</p>
 </code></pre>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">&para;</a></h2>
 <h3 id="create">create<a class="headerlink" href="#create" title="Permanent link">&para;</a></h3>
-<p><span class="source-link"><a href="../src/appdirs/known_folders/#L5">[Source]</a></span></p>
+<p><span class="source-link"><a href="../src/appdirs/known_folders/#L12">[Source]</a></span></p>
 <pre><code class="language-pony">new val create()
 : KnownFolderIds val^
 </code></pre>
@@ -551,7 +551,7 @@ functions return the little endian byte values of the folderid GUIDs</p>
 <hr />
 <h2 id="public-functions">Public Functions<a class="headerlink" href="#public-functions" title="Permanent link">&para;</a></h2>
 <h3 id="profile">profile<a class="headerlink" href="#profile" title="Permanent link">&para;</a></h3>
-<p><span class="source-link"><a href="../src/appdirs/known_folders/#L11">[Source]</a></span></p>
+<p><span class="source-link"><a href="../src/appdirs/known_folders/#L18">[Source]</a></span></p>
 <p>The user's profile folder. A typical path is C:\Users\username.
 Applications should not create files or folders at this level;
 they should put their data under the locations referred to by CSIDL_APPDATA or CSIDL_LOCAL_APPDATA.
@@ -567,7 +567,7 @@ However, if you are creating a new Known Folder the profile root referred to by 
 </ul>
 <hr />
 <h3 id="app_data_roaming">app_data_roaming<a class="headerlink" href="#app_data_roaming" title="Permanent link">&para;</a></h3>
-<p><span class="source-link"><a href="../src/appdirs/known_folders/#L23">[Source]</a></span></p>
+<p><span class="source-link"><a href="../src/appdirs/known_folders/#L30">[Source]</a></span></p>
 <p>The file system directory that serves as a common repository for application-specific data.
 A typical path is C:\Documents and Settings\username\Application Data.</p>
 <p>KNOWNFOLDERID: FOLDERID_RoamingAppData
@@ -581,7 +581,7 @@ GUID: 3EB685DB-65F9-4CF6-A03A-E3EF65729F3D</p>
 </ul>
 <hr />
 <h3 id="app_data_local">app_data_local<a class="headerlink" href="#app_data_local" title="Permanent link">&para;</a></h3>
-<p><span class="source-link"><a href="../src/appdirs/known_folders/#L33">[Source]</a></span></p>
+<p><span class="source-link"><a href="../src/appdirs/known_folders/#L40">[Source]</a></span></p>
 <p>The file system directory that serves as a data repository for local (nonroaming) applications.
 A typical path is C:\Documents and Settings\username\Local Settings\Application Data.</p>
 <p>FOLDERID_LocalAppData
@@ -595,7 +595,7 @@ F1B32785-6FBA-4FCF-9D55-7B8E7F157091</p>
 </ul>
 <hr />
 <h3 id="program_data">program_data<a class="headerlink" href="#program_data" title="Permanent link">&para;</a></h3>
-<p><span class="source-link"><a href="../src/appdirs/known_folders/#L43">[Source]</a></span></p>
+<p><span class="source-link"><a href="../src/appdirs/known_folders/#L50">[Source]</a></span></p>
 <p>The file system directory that contains application data for all users.
 A typical path is C:\Documents and Settings\All Users\Application Data.
 This folder is used for application data that is not user specific.
@@ -613,7 +613,7 @@ This information will not roam and is available to anyone using the computer.</p
 </ul>
 <hr />
 <h3 id="eq">eq<a class="headerlink" href="#eq" title="Permanent link">&para;</a></h3>
-<p><span class="source-link"><a href="../src/appdirs/known_folders/#L11">[Source]</a></span></p>
+<p><span class="source-link"><a href="../src/appdirs/known_folders/#L18">[Source]</a></span></p>
 <pre><code class="language-pony">fun box eq(
   that: KnownFolderIds val)
 : Bool val
@@ -628,7 +628,7 @@ This information will not roam and is available to anyone using the computer.</p
 </ul>
 <hr />
 <h3 id="ne">ne<a class="headerlink" href="#ne" title="Permanent link">&para;</a></h3>
-<p><span class="source-link"><a href="../src/appdirs/known_folders/#L11">[Source]</a></span></p>
+<p><span class="source-link"><a href="../src/appdirs/known_folders/#L18">[Source]</a></span></p>
 <pre><code class="language-pony">fun box ne(
   that: KnownFolderIds val)
 : Bool val
